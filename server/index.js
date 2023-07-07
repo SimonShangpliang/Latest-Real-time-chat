@@ -77,7 +77,6 @@ socket.on("updateFriend",(username)=>
         const friends = user.friends;
         console.log('Friends list:', friends);
         socket.emit("getBff",friends);
-        // Send the friends list to the client or perform any further operations
       } else {
         console.log('User not found');
       }
